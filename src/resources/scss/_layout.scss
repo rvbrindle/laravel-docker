@@ -1,0 +1,47 @@
+.wrapper {
+    padding: 6rem 10rem;
+
+    @include respond(tab) {
+        padding: 5% 7%;
+    }
+
+}
+
+.row {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    h1 {
+        padding-left: 2rem;
+        @include respond(phone) {
+            margin-top: 0;
+            width: 100%;
+            padding: 0;
+        }
+    }
+    .logo {
+        background-image: url("../img/logo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 20rem;
+        min-width: 20rem;
+
+        @include respond(phone) {
+            height: 20rem;
+            width: 20rem;
+            margin: 0;
+
+            filter: grayscale(20%);
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+html {
+    font-size: 62.5%; //1rem = 10px;
+
+    body {
+        position: relative;
+    }
+
+    .copy {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        margin-bottom: auto;
+        align-content: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,32 @@
+* {
+    font-family: "Quicksand", serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+$main-title: 5rem;
+$main-title-tab: 3rem;
+
+$default_font-size: 1.6rem;
+$default_font-size-tab: 1.3rem;
+
+$default_font-size--footnote: 1.4rem;
+$default_font-style--footnote: italic;
+
+h1 {
+    font-size: $main-title;
+}
+
+h3 {
+    font-size: 5rem;
+
+    @include respond(tab) {
+        font-size: 3rem;
+    }
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+input[placeholder] {
+    font-family: Arial, FontAwesome;
+}

@@ -18,7 +18,9 @@ services:
     volumes:
       - ./src:/var/www/html:delegated
   mysql:
-    image: mysql:5.7
+    image: mysql:latest
+    volumes:
+      - ./data/mysql:/var/lib/mysql
     env_file:
       - ./env/mysql.env
     ports:
